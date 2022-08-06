@@ -19,7 +19,7 @@ def run_web_app():
         col1.header("Uploaded Image")
         col1.image(image, use_column_width = True)
 
-        col2.header("Art")
+        col2.header("Generated Art")
         col2.image(art, use_column_width = True)
 
 if __name__=="__main__":
