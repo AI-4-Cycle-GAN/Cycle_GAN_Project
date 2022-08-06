@@ -16,15 +16,19 @@ def preprocess_image(image):
     image = 2 * image - 1
     return image
 
+def postprocess_image(image):
+    image = tf.image.resize(image, DISPLAY_SIZE)
+    image = tf.squeeze(image, axis = 0)
+    image = (image + 1) / 2.0
+    return image.numpy()
+
 def generate_art_from_image(image):
     global ART_GENERATOR
     image = preprocess_image(image)
     art = ART_GENERATOR.predict(image)
-    art = tf.squeeze(art, axis = 0)
-    art = (art + 1) / 2.0
-    art = tf.image.resize(art, DISPLAY_SIZE)
-    image = tf.image.resize(image, DISPLAY_SIZE)
-    return image.numpy(), art.numpy()
+    art = postprocess_image(art)
+    image = postprocess_image(image)
+    return image, art
 
 
 load_model()
