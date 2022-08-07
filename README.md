@@ -1,10 +1,8 @@
 # Generate Ukiyo-e Art Using Cycle GAN
 
 #### The following project generates Ukiyo-e Art images from real images using a Cycle GAN.
-<br>
 
 ### The deployed model can be found at : https://ai-4-cycle-gan.herokuapp.com/
-<br>
 
 #### **Cycle GAN Paper :** https://www.cs.cmu.edu/~junyanz/projects/CycleGAN/CycleGAN.pdf
 #### **Dataset Used :** https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/ukiyoe2photo.zip
