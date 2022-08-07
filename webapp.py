@@ -10,7 +10,6 @@ def layout():
 
 def run_web_app():
     selection = layout()
-    image_file = True
     image_file = st.sidebar.file_uploader("Upload Image", type = ALLOWED_IMAGE_EXTENSIONS, key = "f1")
     if image_file is not None:
         image = np.array(Image.open(image_file).convert("RGB"))
@@ -23,9 +22,7 @@ def run_web_app():
         col2.subheader("Generated Art")
         col2.image(art, use_column_width = True)
 
-        st.text("Note : Please bare with us regarding the artifacts. \nMaybe in the future a well trained model will generate even more beautiful artistic images.")    
-    else:
-        st.subheader("Please Upload a Valid Image File!")
+        st.text("Note : Please bare with us regarding the artifacts. \nMaybe in the future a well trained model will generate even more art.")
 
 if __name__=="__main__":
     run_web_app()
