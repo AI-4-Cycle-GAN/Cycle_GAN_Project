@@ -22,7 +22,7 @@ def run_web_app():
         col2.subheader("Generated Art")
         col2.image(art, use_column_width = True)
 
-        st.text("Note : Please bare with us regarding the artifacts. \nMaybe in the future a well trained model will generate even more art.")
+        st.text("Note : Please bare with us regarding the artifacts. \nMaybe in the future a well trained model will generate even more beautiful art.")
 
 if __name__=="__main__":
     run_web_app()
