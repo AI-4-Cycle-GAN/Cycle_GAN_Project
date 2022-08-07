@@ -16,11 +16,15 @@ def run_web_app():
         image, art = generate_art_from_image(image)
 
         col1, col2 = st.columns(2)
-        col1.header("Uploaded Image")
+        col1.subheader("Uploaded Image")
         col1.image(image, use_column_width = True)
 
-        col2.header("Generated Art")
+        col2.subheader("Generated Art")
         col2.image(art, use_column_width = True)
+
+        st.text("Note : Please bare with us regarding the artifacts. Maybe in the future a well trained model will generate even more beautiful artistic images.")    
+    else:
+        st.subheader("Please Upload a Valid Image File!")
 
 if __name__=="__main__":
     run_web_app()
