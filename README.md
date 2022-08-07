@@ -9,13 +9,15 @@
 
 <br>
 
-## Model Results
-The following are the generated Ukiyo-e art images from the model on the corresponding real images.
-![Model Output](images/output_2.png)
-![Model Output](images/output_1.png)
-
-<br>
-
 ## Cycle GAN Workflow
 The following is a glimpse of how the CYcle GAN works.
 ![Model Workflow](images/workflow.jpeg)
+
+<br>
+
+## Model Results
+The following are the generated Ukiyo-e art images from the model on the corresponding real images.
+![Model Output](images/output_2.png)
+<div style = "text-align: center">
+    <img src = "images/output_1.png" alt = "Model output" />
+</div>
